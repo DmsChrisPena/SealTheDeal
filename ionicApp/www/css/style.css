@@ -1,0 +1,79 @@
+/* Empty. Add your own CSS if you like */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,100,100italic,500,500italic,700,700italic);
+
+html {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sign-in-header {
+	height: 40vh;
+	background-color: #00B8D4 !important;
+	background-image: url('/img/goodtimes2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.sign-in-body {
+	background-color: white;
+	height: 75vh;
+}
+
+.header-text {
+	color: white;
+	font-weight: 100;
+	letter-spacing: 1.5px;
+	font-size: 42px;
+	padding-top: 20px;
+}
+
+.list-forms {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-top: 15%;
+}
+
+.email-form {
+	border-left: none;
+	border-right: none;
+	margin-left: 5vw;
+	margin-right: 5vw;
+
+}
+
+.sign-in-btn {
+	border-radius: 0px;
+	background-color: #00B8D4 !important;
+	border-color: #00B8D4 !important;
+	width: 90vw;
+	margin-top: 7vh;
+	margin-bottom: 2vh;
+}
+
+.sign-in-terms {
+	text-transform: uppercase;
+	font-weight: 300;
+	color: rgb(166, 166, 166);
+	font-size: 12px;
+	padding-left: 5vw;
+}
+
+.sign-up-link {
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: 300;
+	color: #00B8D4;
+	font-size: 12px;
+	padding-right: 5vw;
+}
