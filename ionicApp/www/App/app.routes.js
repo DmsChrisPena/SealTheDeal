@@ -1,7 +1,9 @@
 (function() {
-  angular.module('SealApp').config(['$stateProvider', '$urlRouterProvider', ionicConfig]);
+    angular.module('SealApp').config(['$httpProvider', '$locationProvider', '$urlRouterProvider', '$stateProvider', ionicConfig]);
 
-  function ionicConfig($stateProvider, $urlRouterProvider) {
+    function ionicConfig($httpProvider, $locationProvider, $urlRouterProvider, $stateProvider) {
+    $httpProvider.interceptors.push('authService');
+    $locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise('/');
 
