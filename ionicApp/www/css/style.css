@@ -15,6 +15,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
 }
 
+/* Sign In */
+
 .sign-in-header {
 	height: 40vh;
 	background-color: #00B8D4 !important;
@@ -22,6 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0 97%);
+	clip-path: polygon(0 0, 100% 0, 100% 81%, 0 97%);
 }
 
 .sign-in-body {
@@ -58,7 +62,8 @@ h1, h2, h3, h4, h5, h6 {
 	border-color: #00B8D4 !important;
 	width: 90vw;
 	margin-top: 7vh;
-	margin-bottom: 2vh;
+	margin-bottom: 2.5vh;
+	text-transform: uppercase;
 }
 
 .sign-in-terms {
@@ -72,8 +77,35 @@ h1, h2, h3, h4, h5, h6 {
 .sign-up-link {
 	text-transform: uppercase;
 	text-align: right;
-	font-weight: 300;
+	font-weight: 400;
 	color: #00B8D4;
 	font-size: 12px;
 	padding-right: 5vw;
+}
+
+/* Sign Up */
+
+.sign-up-header {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 83%);
+	clip-path: polygon(0 0, 100% 0, 100% 94%, 0 83%);
+}
+
+.sign-up-btn {
+	border-radius: 0px;
+	background-color: #673AB7 !important;
+	border-color: #673AB7 !important;
+	width: 90vw;
+	margin-top: 7vh;
+	text-transform: uppercase;
+	margin-bottom: 2.5vh;
+}
+
+.sign-in-link {
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: 400;
+	color: #00B8D4;
+	font-size: 12px;
+	padding-right: 5vw;
+	color: #673AB7;
 }
