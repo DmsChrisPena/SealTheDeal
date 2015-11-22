@@ -2,7 +2,7 @@
 
 	angular.module('SealApp')
 		.factory('authService', ['$window', '$q', authService])
-		.factory('sealService', ['$window', '$q', '$http', sealService]);
+		.factory('sealService', ['$window', '$q', '$http', 'BackendUrls', sealService]);
 
 	function authService($window, $q) {
         var service = {};
@@ -21,7 +21,7 @@
         return service;
     }
 
-	function sealService($window, $q, $http) {
+	function sealService($window, $q, $http, BackendUrls) {
 		var service = {};
 
 		service.login = login;
@@ -36,17 +36,19 @@
             var deferred = $q.defer();
 
             $http({
-                url: '/Token',
+                url: BackendUrls.base + '/Token',
                 method: 'POST',
                 data: 'username=' + username + '&password=' + password + '&grant_type=password',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
             }).success(function (data) {
+                console.log(data);
                 $window.sessionStorage.setItem('token', data.access_token);
                 if (data.isManager == "true") $window.sessionStorage.setItem('isManager', data.isManager);
                 if (data.isClerk == "true") $window.sessionStorage.setItem('isClerk', data.isClerk);
                 if (data.isCustomer == "true") $window.sessionStorage.setItem('isCustomer', data.isCustomer);
                 deferred.resolve();
             }).error(function (data) {
+                console.log(data);
                 deferred.reject();
             });
 
@@ -74,7 +76,7 @@
             var deferred = $q.defer();
 
             $http({
-                url: '/api/Account/Register',
+                url: BackendUrls.base + '/api/Account/Register',
                 method: 'POST',
                 data: { 'email': email, 'password': password, 'confirmPassword': confirmPassword }
             }).success(function (data) {

@@ -8,7 +8,7 @@ namespace SealTheDeal.Models
 {
     public class Type
     {
-        public int IsDeleted { get; set; }
+        public bool IsDeleted { get; set; }
         public bool IsManager { get; set; }
         public bool IsClerk { get; set; }
         public bool IsCustomer { get; set; }

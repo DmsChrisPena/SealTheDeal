@@ -61,6 +61,7 @@
     <Compile Include="DomainModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SupportingModels.cs" />
+    <Compile Include="ViewModels\GetViewModels\RolesUVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -11,6 +11,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using SealTheDeal.Web.Models;
 using SealTheDeal.Models;
+using SealTheDeal.Data.Repositories;
+using SealTheDeal.Models.ViewModels.GetViewModels;
 
 namespace SealTheDeal.Web.Providers
 {
@@ -89,9 +91,13 @@ namespace SealTheDeal.Web.Providers
 
         public static AuthenticationProperties CreateProperties(string userName)
         {
+            UnitOfWork _unit = new UnitOfWork();
+
+            RolesUVM roles = _unit.User.GetRoles(userName);
+
             IDictionary<string, string> data = new Dictionary<string, string>
             {
-                { "userName", userName }
+                {"isManager", roles.IsManager}, {"isClerk", roles.IsClerk}, {"isCustomer", roles.IsCustomer}
             };
             return new AuthenticationProperties(data);
         }
