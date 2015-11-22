@@ -12,9 +12,15 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+    <!-- Leaflet Map -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css">
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- Leaflet Angular -->
+    <script src="js/angular-leaflet-directive.js"></script>
 
     <!-- UI Router -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
@@ -32,6 +38,13 @@
   
     <!-- Sign Up -->
     <script src="App/Components/signUp/signUpController.js"></script>
+
+    <!-- Map -->
+    <script src="App/Components/map/mapController.js"></script>
+
+    <!-- Deals -->
+    <script src="App/Components/deals/dealsController.js"></script>
+
 
   </head>
   <body ng-app="SealApp">

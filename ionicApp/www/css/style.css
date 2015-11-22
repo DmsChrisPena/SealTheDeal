@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 .sign-in-header {
 	height: 40vh;
 	background-color: #00B8D4 !important;
-	background-image: url('/img/goodtimes2.jpg');
+	background-image: url('/img/skyline2.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -35,9 +35,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-text {
 	color: white;
-	font-weight: 100;
+	font-weight: 100 !important;
 	letter-spacing: 1.5px;
-	font-size: 42px;
+	font-size: 42px !important;
 	padding-top: 20px;
 }
 
@@ -108,4 +108,84 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 12px;
 	padding-right: 5vw;
 	color: #673AB7;
+}
+
+/* Navbar */
+
+.seal-navbar {
+	background-color: #3F51B5;
+	color: white;
+}
+
+/* Map */
+
+.deal-map {
+	height: 92%;
+	width: 100%;
+}
+
+/* Deal */
+
+.top-deal {
+	background-image: url('../img/goodtime.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0px;
+	min-height: 100px;
+	height: auto;
+}
+
+.top-deal-overlay {
+	background: linear-gradient(rgba(10, 10, 10, 0.60), rgba(10, 10, 10, .8)); 
+	min-height: 100%;
+	min-width: 100%;
+	min-height: 100px;
+	height: auto;
+
+}
+
+.deal-miles {
+	color: white;
+	font-weight: 200;
+	font-size: 14px !important;
+	padding-right: 6px;
+}
+
+.deal-title {
+	margin: 0px !important;	
+	color: #666666 !important;
+	text-align: center;
+	font-size:18px !important;
+}
+
+.deal-details {
+	color: #666666 !important;
+	font-size: 13px !important;
+	line-height: 1.75 !important;
+	margin-bottom: 0px !important;
+}
+
+.deal-btn {
+	font-size: 16px;
+	font-weight: 300;
+	width: 50%;
+	background-color: #009688;
+	border: 1px solid #009688;
+	color: white;
+	border-radius: 10em;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.deal-item {
+	margin-bottom: 10px;
+}
+
+.has-footer {
+	padding-bottom: 60px;
+}
+
+.bottom-deal {
+
 }

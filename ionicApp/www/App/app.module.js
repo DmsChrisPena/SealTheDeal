@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 
-angular.module('SealApp', ['ionic', 'ui.router'])
+angular.module('SealApp', ['ionic', 'ui.router', 'leaflet-directive'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
