@@ -1,0 +1,72 @@
+<ion-view view-title="Map" name="Map">
+  <ion-content scroll="false" class="has-footer">
+	
+	<h2 class="header-text header-2">Settings <i class="icon ion-ios-gear-outline"></i></h2>
+
+	<div class="list">
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">First Name</span>
+	    <input type="text" placeholder="First Name">
+	  </label>
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">Last Name</span>
+	    <input type="text" placeholder="Last Name">
+	  </label>
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">Age</span>
+	    <input type="text" placeholder="Age">
+	  </label>
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">Email</span>
+	    <input type="text" placeholder="Email">
+	  </label>
+	</div>
+
+	<div class="list">
+
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+	      Sex
+	    </div>
+	    <select>
+	      <option selected>Male</option>
+	      <option>Female</option>
+	    </select>
+	  </label>
+
+	</div>
+	<div class="row">
+		<button class="button button-positive reset-btn center-block">
+		  Reset Password &nbsp;<i class="icon ion-gear-a"></i>
+		</button>
+	</div>
+
+	<div class="row">
+		<button class="button button-assertive logout-btn center-block">
+		  Logout &nbsp;<i class="icon ion-log-out"></i>
+		</button>		
+	</div>
+
+
+  </ion-content>
+
+    <!-- Nav Footer -->
+    <div class="tabs tabs-icon-top seal-navbar">
+      <a class="tab-item" nav-direction="back" ui-sref="deals">
+        <i class="icon ion-cash"></i>
+        Deals
+      </a>
+      <a class="tab-item" nav-direction="back" ui-sref="map">
+        <i class="icon ion-map"></i>
+        Map
+      </a>
+      <a class="tab-item" ui-sref="history">
+        <i class="icon ion-ios-list-outline"></i>
+        History
+      </a>
+      <a class="tab-item active" ui-sref="settings">
+        <i class="icon ion-gear-a"></i>
+        Settings
+      </a>
+    </div>
+</ion-view>

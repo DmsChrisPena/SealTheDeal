@@ -189,3 +189,45 @@ h1, h2, h3, h4, h5, h6 {
 .bottom-deal {
 
 }
+
+/* Settings */
+
+.reset-btn {
+	width: 60%;
+	margin-bottom: 10px;
+	background-color: #00B8D4 !important;
+	border-color: #00B8D4 !important;
+}
+
+.logout-btn {
+	width: 60%;
+	margin-bottom: 10px;
+	background-color: #FF1744 !important;
+	border-color: #FF1744 !important;
+}
+
+.header-2 {
+	color: #666666;
+	text-align: center;
+	padding-top: 6px;
+}
+
+/* History */
+
+.history-text {
+	color: #666666;
+}
+
+.history-btn {
+	background-color: transparent;
+	color:  #FF1744;
+	border: 1px solid #FF1744;
+	margin-top: 4px;
+	width: 60%;
+	border-radius: 10em;
+}
+
+.right-item {
+	width: 50%;
+	margin: 0px;
+}

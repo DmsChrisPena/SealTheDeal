@@ -1,0 +1,29 @@
+<ion-view view-title="Map" name="Map">
+  <ion-content scroll="false" class="has-footer">
+    
+
+  </ion-content>
+    <div class="deal-map">
+      <leaflet resizeable markers="markers" paths="paths" center="center"  width="100%" height="100%"></leaflet>
+    </div>
+
+    <!-- Nav Footer -->
+    <div class="tabs tabs-icon-top seal-navbar">
+      <a class="tab-item" nav-direction="back" ui-sref="deals">
+        <i class="icon ion-cash"></i>
+        Deals
+      </a>
+      <a class="tab-item active" nav-direction="back" ui-sref="map">
+        <i class="icon ion-map"></i>
+        Map
+      </a>
+      <a class="tab-item" ui-sref="history">
+        <i class="icon ion-ios-list-outline"></i>
+        History
+      </a>
+      <a class="tab-item" ui-sref="settings">
+        <i class="icon ion-gear-a"></i>
+        Settings
+      </a>
+    </div>
+</ion-view>
